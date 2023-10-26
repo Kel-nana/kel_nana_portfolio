@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link as NavLinks, animateScroll as scroll } from 'react-scroll';
 
 const links = [
-  { path: 'landing_Page', text: 'Landing Page', click: 'onClick={toggleHome}' },
+  { path: '/', text: 'Landing Page', click: 'onClick={toggleHome}' },
   { path: 'about_me', text: 'About Me' },
 ];
 
@@ -21,7 +21,7 @@ function Navbar() {
     window.addEventListener('scroll', changeNav);
   }, []);
 
-  // Return from blogs page btn work in progress
+  // Return from blogs page btn work in prog
   const toggleHome = () => {
     scroll.scrollToTop();
   };

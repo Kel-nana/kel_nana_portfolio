@@ -1,7 +1,7 @@
 function LandingPage() {
   return (
     <>
-      <section id="landing_Page">
+      <section id="/">
         <h2>Landing page </h2>
         <h2>Landing page </h2>
         <h2>Landing page </h2>
