@@ -1,5 +1,5 @@
 import Outlet from './Outlet';
-import Navbar from './Navbar';
+import Navbar from '../navigation/Navbar';
 
 function Layout() {
   return (

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link as NavLinks, animateScroll as scroll } from 'react-scroll';
 
 const links = [
-  { path: 'landing_Page', text: 'Landing Page', click: 'to="/" onClick={toggleHome}' },
+  { path: 'landing_Page', text: 'Landing Page', click: 'onClick={toggleHome}' },
   { path: 'about_me', text: 'About Me' },
 ];
 
