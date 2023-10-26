@@ -21,6 +21,7 @@ function Navbar() {
     window.addEventListener('scroll', changeNav);
   }, []);
 
+  // Return from blogs page btn work in progress
   const toggleHome = () => {
     scroll.scrollToTop();
   };
