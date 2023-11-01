@@ -1,6 +1,20 @@
 function Work() {
   return (
-    <h2>Work</h2>
+    <section id="work">
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+      <h2>Work</h2>
+    </section>
   );
 }
 

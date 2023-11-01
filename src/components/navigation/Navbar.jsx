@@ -4,6 +4,8 @@ import { Link as NavLinks, animateScroll as scroll } from 'react-scroll';
 const links = [
   { path: '/', text: 'Landing Page', click: 'onClick={toggleHome}' },
   { path: 'about_me', text: 'About Me' },
+  { path: 'work', text: 'Projects' },
+  { path: 'contact', text: 'Contacts' },
 ];
 
 function Navbar() {
@@ -28,7 +30,7 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${scrollNav ? 'scrollNav' : ''}`}>
-      <button type="button" onClick={toggleHome}>Kel_nana</button>
+      <NavLinks type="button" to="/" onClick={toggleHome}>Kel_nana</NavLinks>
       <section>
 
         <ul>
