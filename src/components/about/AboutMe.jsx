@@ -3,6 +3,22 @@ function AboutMe() {
     <section id="about_me">
 
       <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
+      <h2>About Me</h2>
     </section>
   );
 }
