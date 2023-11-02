@@ -1,7 +1,7 @@
 function LandingPage() {
   return (
     <>
-      <section id="/">
+      <section id="/" className="pt-[60px]">
         <h2>Landing page </h2>
         <h2>Landing page </h2>
         <h2>Landing page </h2>

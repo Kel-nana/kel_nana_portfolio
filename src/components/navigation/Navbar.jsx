@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link as NavLinks, animateScroll as scroll } from 'react-scroll';
 
 const links = [
-  { path: '/', text: 'Landing Page', click: 'onClick={toggleHome}' },
+  { path: '/', text: 'Landing Page' },
   { path: 'about_me', text: 'About Me' },
   { path: 'work', text: 'Projects' },
   { path: 'contact', text: 'Contacts' },
@@ -29,11 +29,11 @@ function Navbar() {
   };
 
   return (
-    <nav className={`navbar ${scrollNav ? 'scrollNav' : ''}`}>
-      <NavLinks type="button" to="/" onClick={toggleHome}>Kel_nana</NavLinks>
+    <nav className={`navbar fixed flex h-16 top-0 left-0 mx-auto w-[100%] px-2 sm:px-6 lg:px-8 ${scrollNav ? 'scrollNav' : ''}`}>
+      <NavLinks className="pr-[60%]" type="button" to="/" onClick={toggleHome}>Kel_nana</NavLinks>
       <section>
 
-        <ul>
+        <ul className=" flex items-center space-x-6 ">
           {links.map((link) => (
             <li key={link.text}>
               <NavLinks
