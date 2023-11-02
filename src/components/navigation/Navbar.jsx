@@ -29,13 +29,13 @@ function Navbar() {
   };
 
   return (
-    <nav className={`navbar fixed flex h-16 top-0 left-0 mx-auto w-[100%] px-2 sm:px-6 lg:px-8 ${scrollNav ? 'scrollNav' : ''}`}>
+    <nav className={`navbar shadow-md pt-[30px] bg-slate-100 border-slate-200 border-2 fixed flex h-[14vh] top-0 left-0 mx-auto w-[100%] px-2 sm:px-6 lg:px-8 ${scrollNav ? 'scrollNav' : ''}`}>
       <NavLinks className="pr-[60%]" type="button" to="/" onClick={toggleHome}>Kel_nana</NavLinks>
       <section>
 
-        <ul className=" flex items-center space-x-6 ">
+        <ul className=" flex items-center space-x-6  rounded-lg">
           {links.map((link) => (
-            <li key={link.text}>
+            <li className="border-slate-200 border-2 rounded-md px-1.5" key={link.text}>
               <NavLinks
                 to={link.path}
                 smooth
