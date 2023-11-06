@@ -64,7 +64,7 @@ function Navbar() {
             <li className={` border-slate-200 border-2 rounded-md px-1.5 mb-[130px] ${link.class}`} onMouseEnter={onEnter} onMouseLeave={onLeave} key={link.text}>
               <NavLinks
                 to={link.path}
-                ref={linkRef}
+                // ref={linkRef}
                 smooth
                 duration={500}
                 spy
