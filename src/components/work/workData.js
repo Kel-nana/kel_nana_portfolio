@@ -91,21 +91,6 @@ const projects = works.map((work) => (
   </div>
 ));
 
-// const toolsAndMethodsDisplay = toolsAndMethods.map((item, index) => (
-//   <div className="grid grid-cols-3 gap-2 w-[27vw] mb-[5px]  rounded-tr-3xl border_color_top_img">
-//     <p>{item.name}</p>
-//     <img
-//       // eslint-disable-next-line react/no-array-index-key
-//       key={index}
-//       src={item.Image}
-//       alt="image_portfolio"
-//       className="z-20 relative ml-[97.6%] h-[40px]
-// w-[40px]  rounded-full border-2 border_color_icon border_color_left p-[3.5px]"
-//     />
-
-//   </div>
-// ));
-
 export {
   works, projects,
 };
