@@ -53,7 +53,7 @@ const projects = works.map((work) => (
   <div key={work.name} className="grid grid-cols-3 gap-2 content-center w-[27vw] mb-[5px] ">
     <p>{work.name}</p>
     <p>
-      {work.technologies.map((technique) => technique) }
+      {work.technologies.map((tech) => tech) }
     </p>
     <p>{work.description}</p>
     <p>{work.liveVersionLink}</p>
