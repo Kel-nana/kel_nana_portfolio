@@ -16,7 +16,8 @@ body {
 p::selection,
 h1::selection,
 h2::selection,
-span::selection {
+span::selection,
+br::selection {
   /* Change highlight background color to black */
   background: #07070700 !important;
   /* Change highlight text color to red */

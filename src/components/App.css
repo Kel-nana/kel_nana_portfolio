@@ -58,11 +58,13 @@ left: 25%;
           border-top: 4px solid rgba(6, 78, 59, 0.638);
           border-right: 4px solid rgba(6, 78, 59, 0.638);
           z-index: 9999999;
+          pointer-events: none;
         }
 
         .home_left_section {
           width: 20% !important;
           height: 65% !important;
+          pointer-events: none;
         }
 
         .box_border_skills{
@@ -72,6 +74,8 @@ left: 25%;
           border-top: 4px solid rgba(6, 78, 59, 0.638);
           border-right: 4px solid rgba(6, 78, 59, 0.638);
           z-index: 9999999;
+          pointer-events: none;
+
         }
 
         .box_border_skills_front {
@@ -81,6 +85,7 @@ left: 25%;
           border-top: 4px solid rgba(6, 78, 59, 0.638);
           border-right: 4px solid rgba(6, 78, 59, 0.638);
           z-index: 9999999;
+          pointer-events: none;
         }
         .box_border_skills_back {
           width: 107%;
@@ -89,6 +94,7 @@ left: 25%;
           border-top: 4px solid rgba(6, 78, 59, 0.638);
           border-right: 4px solid rgba(6, 78, 59, 0.638);
           z-index: 9999999;
+          pointer-events: none;
         }
 
         .box_border_main{
@@ -98,6 +104,7 @@ left: 25%;
           border-top: 4px solid rgba(6, 78, 59, 0.638);
           border-left: 4px solid rgb(6, 78, 59);
           z-index: 9999999;
+          pointer-events: none;
         }
 .cursor_color_styles {
   z-index: 9999999;
@@ -117,5 +124,10 @@ left: 25%;
 .border_about_me {
   border-left: 4px solid rgba(6, 78, 59, 0.638);
   border-top: 4px solid rgba(6, 78, 59, 0.638);
+  z-index: 9999999;
+}
+.border_about_me_line{
+  border-top: 4px solid rgba(6, 78, 59, 0.638);
+  z-index: 9999999;
 }
 
