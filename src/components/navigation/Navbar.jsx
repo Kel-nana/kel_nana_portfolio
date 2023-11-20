@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 import { Link as NavLinks, animateScroll as scroll } from 'react-scroll';
 
 const links = [
-  { path: '/', text: 'Landing Page', class: 'nav_links nav_links1' },
+  { path: '/', text: 'Home', class: 'nav_links nav_links1' },
   { path: 'about_me', text: 'About Me', class: 'nav_links nav_links1' },
   { path: 'work', text: 'Projects', class: 'nav_links nav_links1' },
   { path: 'contact', text: 'Contacts', class: 'nav_links nav_links1' },
@@ -23,6 +23,8 @@ function Navbar() {
       setTimeout(() => {
         gsap.to('li.nav_links1', {
           y: 65,
+          duration: 0.45,
+          ease: 'bounce.inOut',
         });
       }, 200);
     }, linkRef);
@@ -34,7 +36,7 @@ function Navbar() {
   };
 
   const onLeave = ({ currentTarget }) => {
-    gsap.to(currentTarget, { backgroundColor: '#D3D3D3', scale: 1 });
+    gsap.to(currentTarget, { backgroundColor: '#121110', scale: 1 });
   };
 
   const changeNav = () => {
@@ -55,8 +57,8 @@ function Navbar() {
   };
 
   return (
-    <nav className={`navbar shadow-md bg-slate-100 border-slate-200 border-2 fixed flex h-[14vh] top-0 left-0 mx-auto w-[100%] px-2 sm:px-6 lg:px-8 ${scrollNav ? 'scrollNav' : ''}`}>
-      <NavLinks className="justify-center mr-[56%] mt-[18px] h-[50px] rounded-lg border-slate-200 border-2 rounded-md flex items-center pl-[1.6rem] pr-[1.6rem]" type="button" to="/" onClick={toggleHome}>Kel_nana</NavLinks>
+    <nav className={`navbar z-50 shadow-md border-y-stone-900 border-y-4 fixed flex h-[14vh] top-0 left-0 mx-auto w-[100%] px-2 sm:px-6 lg:px-8 ${scrollNav ? 'scrollNav' : ''}`}>
+      <NavLinks className="justify-center mr-[51%] mt-[18px] h-[50px] rounded-lg border-slate-200 border-2 rounded-md flex items-center pl-[1.6rem] pr-[1.6rem]" type="button" to="/" onClick={toggleHome}>Kel_nana</NavLinks>
       <section>
 
         <ul className=" flex items-center space-x-6  rounded-lg border-slate-200 border-2 rounded-md h-[50px] mt-[18px] w-[35vw] justify-center" ref={linkRef}>
