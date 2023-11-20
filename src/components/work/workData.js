@@ -1,8 +1,12 @@
+import budgetApp from '../../assets/budget_App.png';
+import airPollutionApp from '../../assets/air_pollution.png';
+import purpleCoders from '../../assets/purple_coders.png';
+
 const works = [
   {
     name: 'Budget-App',
     description: 'Budget-App is a mobile web application that allows users to manage their budget. User can see a list of expenses associated with a group and total amount. It also allows users to introduce new groups/expenses and keep track of money spent.',
-    imageSrc: '../../assets/budget_App.png',
+    imageSrc: budgetApp,
     technologies: [
       'JavaScript',
       'Ruby on Rails',
@@ -17,7 +21,7 @@ const works = [
   {
     name: 'Air Pollution App',
     description: 'A (SPA) web application created with Air Pollution Api, users can check levels of the cities, filter them via dropdown menu and see the details per city on the new page.',
-    imageSrc: '../../assets/air_pollution.png',
+    imageSrc: airPollutionApp,
     technologies: [
       'JavaScript',
       'React/Redux',
@@ -32,7 +36,7 @@ const works = [
   {
     name: 'Purple Coders Festival',
     description: 'Purple-Coders is a Its a project meant to master my skills in version control, GitHub flow, pull requests in GitHub and JavaScript..',
-    imageSrc: '../../assets/purple_coders.png',
+    imageSrc: purpleCoders,
     technologies: [
       'JavaScript',
       'CSS',
@@ -44,11 +48,64 @@ const works = [
     stack: 'Front End Dev',
   },
 ];
+// const technology = works.forEach((itemData) =>
+// //   console.log(itemData.technologies);
 
-const work = works.map((work) => {
-  console.log(work.technologies);
-  return work.technologies;
-});
-console.log(work);
+//   itemData.technologies.map((technique) => {
+//     console.log(technique);
+//   }));
 
-// export default works;
+// console.log(technology);
+// const technologyText = technology;
+// console.log(technologyText);
+
+const projects = works.map((work) => (
+  <div key={work.name} className="grid grid-cols-3 gap-2 content-center w-[27vw] mb-[5px] ">
+    <p>{work.name}</p>
+    <p>
+      {/* <span> */}
+      {work.technologies.map((technique) => technique) }
+      {/* </span>
+      <span>
+        {work.technologies[1]}
+      </span>
+      <span>
+        {work.technologies[3]}
+      </span>
+      <span>
+        {work.technologies[4]}
+      </span> */}
+    </p>
+    <p>{work.description}</p>
+    {/* <p>{work.technologies}</p> */}
+    <p>{work.liveVersionLink}</p>
+    <p>{work.SourceLink}</p>
+    <p>{work.date}</p>
+    <p>{work.stack}</p>
+    <img
+      key={work.name}
+      src={work.imageSrc}
+      alt="Projects"
+      className="z-20 relative ml-[97.6%] h-[40px] w-[40px] rounded-full border-2  p-[3.5px]"
+    />
+  </div>
+));
+
+// const toolsAndMethodsDisplay = toolsAndMethods.map((item, index) => (
+//   <div className="grid grid-cols-3 gap-2 w-[27vw] mb-[5px]  rounded-tr-3xl border_color_top_img">
+//     <p>{item.name}</p>
+//     <img
+//       // eslint-disable-next-line react/no-array-index-key
+//       key={index}
+//       src={item.Image}
+//       alt="image_portfolio"
+//       className="z-20 relative ml-[97.6%] h-[40px]
+// w-[40px]  rounded-full border-2 border_color_icon border_color_left p-[3.5px]"
+//     />
+
+//   </div>
+// ));
+
+export {
+  works, projects,
+};
