@@ -6,9 +6,11 @@ function AboutMe() {
   return (
     <section id="about_me" className="pt-[160px] grid grid-cols-2 gap-4">
       <div className="w-[80%] ml-[10%] relative">
-        <h2 className="absolute mt-[-13%] text-4xl font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[1rem]">{aboutMe.name}</h2>
+        <div className="border_about_me_line h-[5px] w-[80%] absolute ">
+          <h2 className="absolute mt-[-13%] text-4xl font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[1rem]">{aboutMe.name}</h2>
+        </div>
         <div className="box_border rounded-tr-3xl ml-[55%] mt-[-5%]" />
-        <p className="box_borders">{aboutMe.description}</p>
+        <p className="box_borders mt-[5%]">{aboutMe.description}</p>
       </div>
       <div className="grid grid-cols-3 gap-2">
         <div className="box_border_main rounded-tr-3xl pl-[8%] mt-[-5%]" />

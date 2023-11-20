@@ -70,10 +70,6 @@ const frontEnd = [
     name: 'Tailwind',
     Image: tailwindImg,
   },
-  {
-    name: 'Redux',
-    Image: reduxImg,
-  },
 ];
 
 const toolsAndMethods = [
@@ -99,12 +95,11 @@ const toolsAndMethods = [
   },
 ];
 
-const frontEndDisplay = frontEnd.map((item, index) => (
-  <div className="grid grid-cols-3 gap-2 content-centerw-[27vw] mb-[5px] rounded-tr-3xl border_color_top_img ">
+const frontEndDisplay = frontEnd.map((item) => (
+  <div key={item.name} className="grid grid-cols-3 gap-2 content-centerw-[27vw] mb-[5px] rounded-tr-3xl border_color_top_img ">
     <p>{item.name}</p>
     <img
-    // eslint-disable-next-line react/no-array-index-key
-      key={index}
+      key={item.name}
       src={item.Image}
       alt="image_portfolio"
       className="z-20 relative ml-[97.6%] h-[40px] w-[40px] rounded-full border-2 border_color_icon border_color_left p-[3.5px]"
@@ -113,12 +108,12 @@ const frontEndDisplay = frontEnd.map((item, index) => (
   </div>
 ));
 
-const backEndDisplay = backEnd.map((item, index) => (
+const backEndDisplay = backEnd.map((item) => (
   <div className="grid grid-cols-3 gap-2 w-[27vw] mb-[5px] rounded-tr-3xl border_color_top_img rounded-tr-3xl border_color_top_img">
     <p>{item.name}</p>
     <img
     // eslint-disable-next-line react/no-array-index-key
-      key={index}
+      key={item.name}
       src={item.Image}
       alt="image_portfolio"
       className="z-20 relative ml-[97.6%] h-[40px] w-[40px] rounded-full border-2 border_color_icon border_color_left p-[3.5px]"
@@ -127,12 +122,12 @@ const backEndDisplay = backEnd.map((item, index) => (
   </div>
 ));
 
-const toolsAndMethodsDisplay = toolsAndMethods.map((item, index) => (
+const toolsAndMethodsDisplay = toolsAndMethods.map((item) => (
   <div className="grid grid-cols-3 gap-2 w-[27vw] mb-[5px]  rounded-tr-3xl border_color_top_img">
     <p>{item.name}</p>
     <img
     // eslint-disable-next-line react/no-array-index-key
-      key={index}
+      key={item.name}
       src={item.Image}
       alt="image_portfolio"
       className="z-20 relative ml-[97.6%] h-[40px] w-[40px]  rounded-full border-2 border_color_icon border_color_left p-[3.5px]"
@@ -140,8 +135,6 @@ const toolsAndMethodsDisplay = toolsAndMethods.map((item, index) => (
 
   </div>
 ));
-// eslint-disable-next-line max-len
-// .Hi, I'm Kelvin, a full-stack developer enrolled in Microverse. I love collaborating with coding partners around the &#127757; using project-based learning and pair programming. I specialize in HTML5, CSS3, JavaScript, and React, with plans to add React Native, Ruby, and Ruby on Rails. With excellent communication and time management skills, I'm passionate about improving user interfaces and building consumer-friendly products. Let's discuss my ideas for enhancing your operating system's user interface on a 20-min Zoom call next week
 
 export {
   aboutMe, backEndDisplay, frontEndDisplay, toolsAndMethodsDisplay,
