@@ -48,36 +48,14 @@ const works = [
     stack: 'Front End Dev',
   },
 ];
-// const technology = works.forEach((itemData) =>
-// //   console.log(itemData.technologies);
-
-//   itemData.technologies.map((technique) => {
-//     console.log(technique);
-//   }));
-
-// console.log(technology);
-// const technologyText = technology;
-// console.log(technologyText);
 
 const projects = works.map((work) => (
   <div key={work.name} className="grid grid-cols-3 gap-2 content-center w-[27vw] mb-[5px] ">
     <p>{work.name}</p>
     <p>
-      {/* <span> */}
       {work.technologies.map((technique) => technique) }
-      {/* </span>
-      <span>
-        {work.technologies[1]}
-      </span>
-      <span>
-        {work.technologies[3]}
-      </span>
-      <span>
-        {work.technologies[4]}
-      </span> */}
     </p>
     <p>{work.description}</p>
-    {/* <p>{work.technologies}</p> */}
     <p>{work.liveVersionLink}</p>
     <p>{work.SourceLink}</p>
     <p>{work.date}</p>
