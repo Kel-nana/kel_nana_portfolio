@@ -17,9 +17,6 @@ function LandingPage() {
         <h2>Landing page </h2>
         <h2>Landing page </h2>
         <h2>Landing page </h2>
-
-        <h2>Landing page </h2>
-        <h2>Landing page </h2>
         <h2>Landing page </h2>
         <h2>Landing page </h2>
         <h2>Landing page </h2>
