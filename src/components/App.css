@@ -5,9 +5,14 @@
   backdrop-filter: blur(100px);
 }
 
+.link_color {
+  color: rgb(6, 78, 59);
+}
+
 .back_round_color_home {
   background-color: #14110F !important;
 }
+
 .image-container {
   position: relative;
 }
