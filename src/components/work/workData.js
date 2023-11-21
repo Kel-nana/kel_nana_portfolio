@@ -1,3 +1,5 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import budgetApp from '../../assets/budget_App.png';
 import airPollutionApp from '../../assets/air_pollution.png';
 import purpleCoders from '../../assets/purple_coders.png';
@@ -37,10 +39,11 @@ const works = [
   },
   {
     id: 3,
-    name: 'Purple Coders Festival',
-    description: 'Purple-Coders is a Its a project meant to master my skills in version control, GitHub flow, pull requests in GitHub and JavaScript..',
+    name: 'NAME: Purple Coders Festival',
+    description: 'DESCRIPTION: Purple-Coders is a Its a project meant to master my skills in version control, GitHub flow, pull requests in GitHub and JavaScript..',
     imageSrc: purpleCoders,
     technologies: [
+      'TECHNOLOGIES: ',
       'JavaScript',
       'CSS',
       'HTML',
@@ -51,32 +54,5 @@ const works = [
     stack: 'Front End Dev',
   },
 ];
-// overflow-hidden
-const projects = works.map((work) => (
-  <div key={work.id} className="w-[70vw] h-[90vh]">
-    <div className=" mb-[5px]">
-      <div>
-        <p>{work.id}</p>
-        <p>{work.name}</p>
-        <p>{work.description}</p>
-        <img
-          key={work.id}
-          src={work.imageSrc}
-          alt="Projects"
-          className="z-20 relative  h-[40px] w-[40px] rounded-full border-2  p-[3.5px]"
-        />
-        <div className="ml-[5px]">
-          {work.technologies.map((tech) => <span className="ml-[10px]" key={work.name}>{tech}</span>) }
-        </div>
-        <p>{work.liveVersionLink}</p>
-        <p>{work.SourceLink}</p>
-        <p>{work.date}</p>
-        <p>{work.stack}</p>
-      </div>
-    </div>
-  </div>
-));
 
-export {
-  works, projects,
-};
+export default works;
