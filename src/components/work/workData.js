@@ -1,5 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable react/jsx-no-comment-textnodes */
 import budgetApp from '../../assets/budget_App.png';
 import airPollutionApp from '../../assets/air_pollution.png';
 import purpleCoders from '../../assets/purple_coders.png';
@@ -7,6 +5,7 @@ import purpleCoders from '../../assets/purple_coders.png';
 const works = [
   {
     id: 1,
+    title: 'Projects',
     name: 'Budget-App',
     description: 'Budget-App is a mobile web application that allows users to manage their budget. User can see a list of expenses associated with a group and total amount. It also allows users to introduce new groups/expenses and keep track of money spent.',
     imageSrc: budgetApp,
@@ -23,6 +22,7 @@ const works = [
   },
   {
     id: 2,
+    title: 'Projects',
     name: 'Air Pollution App',
     description: 'A (SPA) web application created with Air Pollution Api, users can check levels of the cities, filter them via dropdown menu and see the details per city on the new page.',
     imageSrc: airPollutionApp,
@@ -39,6 +39,7 @@ const works = [
   },
   {
     id: 3,
+    title: 'Projects',
     name: 'NAME: Purple Coders Festival',
     description: 'DESCRIPTION: Purple-Coders is a Its a project meant to master my skills in version control, GitHub flow, pull requests in GitHub and JavaScript..',
     imageSrc: purpleCoders,

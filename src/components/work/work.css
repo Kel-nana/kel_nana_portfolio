@@ -28,3 +28,24 @@
     width: 46%;
     height: 73.5%;
   }
+
+  .border_styles_image{
+    position: absolute;
+    border-bottom: 4px solid rgba(6, 78, 59, 0.638);
+    border-right: 4px solid rgba(6, 78, 59, 0.638);
+    z-index: 9999999;
+    pointer-events: none;
+  }
+.border-right {
+    border-bottom: 4px solid rgba(6, 78, 59, 0.638);
+    border-right: 4px solid rgba(6, 78, 59, 0.638);
+}
+  .image_section{
+    width: 26%;
+    height: 24.5%;
+  }
+
+  .bottom_section {
+    width: 36.5%;
+    height: 77.5%;
+  }
