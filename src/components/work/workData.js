@@ -65,9 +65,9 @@ const projects = works.map((work) => (
           alt="Projects"
           className="z-20 relative  h-[40px] w-[40px] rounded-full border-2  p-[3.5px]"
         />
-        <p>
-          {work.technologies.map((tech) => tech) }
-        </p>
+        <div className="ml-[5px]">
+          {work.technologies.map((tech) => <span className="ml-[10px]" key={work.name}>{tech}</span>) }
+        </div>
         <p>{work.liveVersionLink}</p>
         <p>{work.SourceLink}</p>
         <p>{work.date}</p>
