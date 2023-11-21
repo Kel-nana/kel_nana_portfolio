@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-key */
-/* eslint-disable react/jsx-no-comment-textnodes */
 import jestImg from '../../assets/jest.png';
 import rubyImg from '../../assets/ruby.png';
 import htmlImg from '../../assets/htt.png';
@@ -109,10 +107,9 @@ const frontEndDisplay = frontEnd.map((item) => (
 ));
 
 const backEndDisplay = backEnd.map((item) => (
-  <div className="grid grid-cols-3 gap-2 w-[27vw] mb-[5px] rounded-tr-3xl border_color_top_img rounded-tr-3xl border_color_top_img">
+  <div key={item.name} className="grid grid-cols-3 gap-2 w-[27vw] mb-[5px] rounded-tr-3xl border_color_top_img rounded-tr-3xl border_color_top_img">
     <p>{item.name}</p>
     <img
-    // eslint-disable-next-line react/no-array-index-key
       key={item.name}
       src={item.Image}
       alt="image_portfolio"
@@ -123,10 +120,9 @@ const backEndDisplay = backEnd.map((item) => (
 ));
 
 const toolsAndMethodsDisplay = toolsAndMethods.map((item) => (
-  <div className="grid grid-cols-3 gap-2 w-[27vw] mb-[5px]  rounded-tr-3xl border_color_top_img">
+  <div key={item.name} className="grid grid-cols-3 gap-2 w-[27vw] mb-[5px]  rounded-tr-3xl border_color_top_img">
     <p>{item.name}</p>
     <img
-    // eslint-disable-next-line react/no-array-index-key
       key={item.name}
       src={item.Image}
       alt="image_portfolio"

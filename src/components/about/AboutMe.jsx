@@ -4,7 +4,7 @@ import {
 
 function AboutMe() {
   return (
-    <section id="about_me" className="pt-[160px] grid grid-cols-2 gap-4">
+    <section id="about_me" className="pt-[160px] grid grid-cols-2 gap-4 h-[100vh]">
       <div className="w-[80%] ml-[10%] relative">
         <div className="border_about_me_line h-[5px] w-[80%] absolute ">
           <h2 className="absolute mt-[-13%] text-4xl font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[1rem]">{aboutMe.name}</h2>
