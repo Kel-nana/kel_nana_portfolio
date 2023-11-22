@@ -11,7 +11,7 @@ const works = [
     imageSrc: budgetApp,
     technologies: [
       'JavaScript',
-      'Ruby on Rails',
+      'Rails',
       'CSS',
       'HTML',
     ],
@@ -40,11 +40,10 @@ const works = [
   {
     id: 3,
     title: 'Projects',
-    name: 'NAME: Purple Coders Festival',
-    description: 'DESCRIPTION: Purple-Coders is a Its a project meant to master my skills in version control, GitHub flow, pull requests in GitHub and JavaScript..',
+    name: ' Purple Coders Festival',
+    description: ' Purple-Coders is a project meant to master my skills in version control, GitHub flow, pull requests in GitHub and JavaScript..',
     imageSrc: purpleCoders,
     technologies: [
-      'TECHNOLOGIES: ',
       'JavaScript',
       'CSS',
       'HTML',
