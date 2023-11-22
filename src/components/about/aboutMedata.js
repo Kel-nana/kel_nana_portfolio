@@ -16,7 +16,7 @@ import jsImg from '../../assets/jss.png';
 import cssImg from '../../assets/css.png';
 
 const aboutMe = {
-  name: 'About Me',
+  name: 'ABOUT ME',
   description: "Hi, I'm Kelvin, a full-stack developer enrolled in Microverse. I love collaborating with coding partners around the GLOBE using project-based learning and pair programming. I specialize in HTML5, CSS3, JavaScript, and React, with plans to add React Native, Ruby, and Ruby on Rails. With excellent communication and time management skills, I'm passionate about improving user interfaces and building consumer-friendly products. Let's discuss my ideas for enhancing your operating system's user interface on a 20-min Zoom call next week",
 };
 
