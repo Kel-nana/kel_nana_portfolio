@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import {
   aboutMe, backEndDisplay, frontEndDisplay, toolsAndMethodsDisplay,
 } from './aboutMedata';
@@ -7,7 +8,20 @@ function AboutMe() {
     <section id="about_me" className="pt-[160px] grid grid-cols-2 gap-4 h-[100vh]">
       <div className="w-[80%] ml-[10%] relative">
         <div className="border_about_me_line ml-[17%] h-[5px] w-[65%] absolute ">
-          <h2 className="absolute mt-[-14%] text-2xl font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[1rem] pr-[4%]">{aboutMe.name}</h2>
+          <motion.h2
+            initial={{ x: 450 }}
+            whileInView={{ x: [0, 550, 0] }}
+            transition={{
+              duration: 3,
+              delay: 0.3,
+            }}
+            className="absolute mt-[-14%] text-2xl font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[1rem] pr-[4%]"
+            whileHover={{ scale: 0.9, opacity: 0.2 }}
+          >
+            {aboutMe.name}
+          </motion.h2>
+          {/* <h2 className="absolute mt-[-14%] text-2xl font-black
+          border_about_me rounded-tr-3xl pt-[0.7rem] pl-[1rem] pr-[4%]">{aboutMe.name}</h2> */}
         </div>
         <div className="box_border rounded-tr-3xl ml-[55%] mt-[-5%]" />
         <p className="box_borders mt-[5%]">{aboutMe.description}</p>
