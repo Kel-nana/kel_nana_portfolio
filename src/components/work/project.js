@@ -2,7 +2,7 @@
 import works from './workData';
 // back_round_color_home
 const projects = works.map((work) => (
-  <div key={work.name} className="w-[70vw] h-[80vh]   rounded-3xl ml-[5%] text-slate-300">
+  <div key={work.name} className="w-[70vw] h-[80vh]   rounded-3xl ml-[5%] text-slate-400">
     <div className=" mb-[5px] ">
       <div>
         <p className="ml-[75%] w-[10%] border-right rounded-3xl flex justify-center my-5">{work.id}</p>
