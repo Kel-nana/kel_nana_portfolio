@@ -7,7 +7,7 @@ import { Link as NavLinks, animateScroll as scroll } from 'react-scroll';
 const links = [
   { path: '/', text: 'Home', class: 'nav_links nav_links1' },
   { path: 'about_me', text: 'About Me', class: 'nav_links nav_links1' },
-  { path: 'work', text: 'Projects', class: 'nav_links nav_links1' },
+  { path: 'project', text: 'Projects', class: 'nav_links nav_links1' },
   { path: 'contact', text: 'Contacts', class: 'nav_links nav_links1' },
 ];
 

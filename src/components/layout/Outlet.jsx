@@ -1,5 +1,5 @@
 import AboutMe from '../about/AboutMe';
-import Work from '../work/Work';
+import ProjectDisplay from '../work/ProjectDisplay';
 import Contacts from '../contacts/Contacts';
 import LandingPage from '../landingPage/LandingPage';
 
@@ -8,7 +8,7 @@ function Outlet() {
     <>
       <LandingPage />
       <AboutMe />
-      <Work />
+      <ProjectDisplay />
       <Contacts />
     </>
   );
