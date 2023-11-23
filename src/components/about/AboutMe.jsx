@@ -15,13 +15,12 @@ function AboutMe() {
               duration: 3,
               delay: 0.3,
             }}
-            className="absolute mt-[-14%] text-2xl font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[1rem] pr-[4%]"
+            className="absolute mt-[-14%]
+             text-2xl font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[1rem] pr-[4%]"
             whileHover={{ scale: 0.9, opacity: 0.2 }}
           >
             {aboutMe.name}
           </motion.h2>
-          {/* <h2 className="absolute mt-[-14%] text-2xl font-black
-          border_about_me rounded-tr-3xl pt-[0.7rem] pl-[1rem] pr-[4%]">{aboutMe.name}</h2> */}
         </div>
         <div className="box_border rounded-tr-3xl ml-[55%] mt-[-5%]" />
         <p className="box_borders mt-[5%]">{aboutMe.description}</p>
