@@ -39,13 +39,11 @@ left: 25%;
 
         .border_color_icon {
           border-right-color: rgba(6, 78, 59, 0.638);
-
-          
-        }
-
-        .border_color_left {
           border-left-color: rgba(6, 78, 59, 0.638);
+          border-bottom-color: #94A3B8;
+          border-top-color: #94A3B8;
         }
+
 
         .border_color_top {
           border-top-color: rgba(6, 78, 59, 0.638);
