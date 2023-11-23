@@ -17,7 +17,7 @@ function LandingPage() {
   }, []);
   return (
     <>
-      <section id="/" className="pt-[60px] flex bg-slate-300 back_round_color_home hover:bg-blend-darken">
+      <section id="/" className="pt-[60px] flex text-slate-400 back_round_color_home hover:bg-blend-darken">
         <div className=" mt-[150px] ml-[4.2%]  h-[438px] w-[40%] gap-y-4">
           <div className="box_border box_border_base home_left_section rounded-tr-3xl ml-[22.2%] mt-[-2%]" />
           <div>
