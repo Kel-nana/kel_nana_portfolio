@@ -27,13 +27,12 @@ function Project() {
               duration: 3,
               delay: 0.3,
             }}
-            className="absolute mt-[0.5%] ml-[1%] pr-[4%] text-2xl font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[3.8rem]"
+            className="absolute mt-[0.5%] ml-[1%] pr-[4%] text-2x
+            l font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[3.8rem]"
             whileHover={{ scale: 0.9, opacity: 0.2 }}
           >
             PROJECTS
           </motion.h2>
-          {/* <h2 className="absolute mt-[0.5%] ml-[1%] pr-[4%] text-2xl font-black
-           border_about_me rounded-tr-3xl pt-[0.7rem] pl-[3.8rem]">PROJECTS</h2> */}
           <div className="border_styles_right left_section rounded-tr-3xl ml-[21.2%] mt-[2%]" />
           <div className="border_styles right_section rounded-tr-3xl ml-[40.6%] mt-[1%]" />
           <div className="border_styles_image bottom_section rounded-3xl ml-[38.59%] mt-[-1%]" />
