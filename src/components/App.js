@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    gsap.set('ball', { xPercent: -50, yPercent: -50 });
+    gsap.set('.ball', { xPercent: -50, yPercent: -50 });
     const targets = gsap.utils.toArray('.ball');
     window.addEventListener('mousemove', (e) => {
       gsap.to(targets, {
