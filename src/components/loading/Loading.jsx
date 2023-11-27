@@ -1,6 +1,10 @@
+import React from 'react';
+
 function Loading() {
   return (
-    <h2>Loading Page</h2>
+    <div className="loading">
+      <h1>Loading</h1>
+    </div>
   );
 }
 
