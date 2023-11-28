@@ -10,13 +10,13 @@
 .position_first {
     top: 30%;
     left: 50%;
-    animation: triangle1 5s linear 2s infinite alternate;
+    animation: triangle1 5s linear 0.2s infinite alternate;
 }
   
 .position_second {
     top: 50%;
     left: 42%;
-    animation: triangle2 5s linear 2s infinite alternate;
+    animation: triangle2 5s linear 0.2s infinite alternate;
 }
 
 .position_third {
