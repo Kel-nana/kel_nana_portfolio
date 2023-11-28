@@ -1,0 +1,76 @@
+.loading_circle {
+    position: relative;
+    display: inline-block;
+    border: 10px solid rgba(6, 78, 59, 0.638);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.position_first {
+    top: 30%;
+    left: 50%;
+    animation: triangle1 5s linear 2s infinite alternate;
+}
+
+.position_second {
+    top: 50%;
+    left: 42%;
+    animation: triangle2 5s linear 2s infinite alternate;
+}
+
+.position_third {
+    top: 50%;
+    left: 49.7%;
+}
+
+.loading_animation {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 4px solid rgba(6, 78, 59, 0.638);
+    background-color: rgba(6, 78, 59, 0.638);
+  }
+
+  .loading_text {
+    display: inline-block;
+    font-size: 4vw;
+  }
+
+@keyframes triangle1 {
+    0%   {left:50%; top:30%;}
+    25%  {left:45%; top: 50%;}
+    50%  {left: 56%; top:50%;}
+    75%  {left:50%; top:30%;}
+    100% {left:45%; top: 50%;}
+   } 
+   @keyframes triangle2 {
+    0%   {left:42%; top:50%;}
+    25%  {left:53%; top: 50%;}
+    50%  {left: 47%; top:30%;}
+    75%  {left:42%; top:50%;}
+    100% {left:46.5%; top: 50%;}
+   } 
+
+   .loading_animation_container .loading_animation:nth-last-child(1) {
+    animation: loadingC 0.6s 0.1s linear infinite;
+  }
+  .loading_animation_container .loading_animation:nth-last-child(2) {
+    animation: loadingC 0.6s 0.2s linear infinite;
+  }
+  .loading_animation_container .loading_animation:nth-last-child(3) {
+    animation: loadingC 0.6s 0.3s linear infinite;
+  }
+
+  @keyframes loadingC {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
