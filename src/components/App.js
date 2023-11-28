@@ -12,7 +12,7 @@ function App() {
     // Simulate loading for 2 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 799922000);
+    }, 1500);
   }, []);
 
   useEffect(() => {
