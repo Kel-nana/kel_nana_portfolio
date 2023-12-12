@@ -3,11 +3,11 @@ import './loading.css';
 
 function Loading() {
   return (
-    <section className="bg-black">
+    <section className="back_round_color_home">
       <div className="loading grid grid-cols-2 gap-2 h-[100vh] w-[99vw]">
         <div className="top_div h-[46vh] w-[92%] back_round_color_home" />
-        <div className="loading_circle_container back_round_color_home h-[50vh] w-[99%]">
-          <div className="loading_circle position_first" />
+        <div className="relative loading_circle_container back_round_color_home h-[50vh] w-[99%]">
+          <div className="absolute loading_circle position_first" />
           <div className="loading_circle position_second" />
           <div className="loading_circle position_third" />
         </div>
