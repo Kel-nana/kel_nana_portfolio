@@ -3,10 +3,10 @@ import React, {
 } from 'react';
 import { gsap } from 'gsap';
 import { Link as NavLinks, animateScroll as scroll } from 'react-scroll';
-import { onEnter, onLeave, links } from './Navlinks';
+import { AiOutlineClose } from 'react-icons/ai';
+import { onEnter, onLeave, links } from './NavUtil';
 // import { BiMenuAltRight } from "react-icons/bi";
 // import { HiMenuAlt4 } from 'react-icons/hi';
-// import { AiOutlineClose } from 'react-icons/ai';
 
 function Navbar() {
   const [scrollNav, setScrollNav] = useState(false);
@@ -26,7 +26,7 @@ function Navbar() {
     };
   }, []);
 
-  console.log(windowSize);
+  // console.log(windowSize);
   // 1242
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -68,6 +68,24 @@ function Navbar() {
         <ul className=" flex items-center space-x-6 rounded-lg border-slate-200 border-2 rounded-md h-[50px] mt-[18px] w-[35vw] justify-center" ref={linkRef}>
           {links.map((link) => (
             <li className={` border-slate-200 border-2 rounded-md px-1.5 mb-[130px] ${link.class}`} onMouseEnter={onEnter} onMouseLeave={onLeave} key={link.text}>
+              <NavLinks
+                to={link.path}
+                smooth
+                duration={500}
+                spy
+                exact="true"
+              >
+                {link.text}
+              </NavLinks>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section className={` ${windowSize > 1242 ? 'hidden' : ''}`}>
+        <ul className=" grid grid-row-4 rounded-lg border-slate-200 border-2 rounded-md h-[90vh] w-[35vw] align-center justify-center" ref={linkRef}>
+          <div><AiOutlineClose className="absolute text-3xl" /></div>
+          {links.map((link) => (
+            <li className={` border-slate-200 border-2 rounded-md h-[6vh] w-[10vw]  ${link.class}`} onMouseEnter={onEnter} onMouseLeave={onLeave} key={link.text}>
               <NavLinks
                 to={link.path}
                 smooth
