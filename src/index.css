@@ -16,7 +16,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* p::selection,
+p::selection,
+input::selection,
 h1::selection,
 h2::selection,
 span::selection,
@@ -25,7 +26,7 @@ br::selection {
   background: #07070700 !important;
 
   color: #ff0000 !important;
-} */
+}
 
 body::-webkit-scrollbar {
   width: 12px;
