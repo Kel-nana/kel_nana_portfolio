@@ -1,0 +1,136 @@
+.navbar {
+  background-color: #34312d58;
+  color: rgb(6, 78, 59) !important;
+  font-weight: 700;
+  backdrop-filter: blur(100px);
+}
+
+.link_color {
+  color: rgb(6, 78, 59);
+}
+
+.back_round_color_home {
+  background-color: #14110F !important;
+}
+
+.image-container {
+  position: relative;
+}
+
+.profile_img {
+  position: absolute;
+top: 38%;
+left: 25%;
+}
+
+/* .img_effect {
+  border-radius: 100% ;
+  background-color: black;
+} */
+
+
+
+
+        .tilt-div {
+          transform: rotate(135deg);
+        }
+
+
+
+        .border_color_icon {
+          border-right-color: rgba(6, 78, 59, 0.638);
+          border-left-color: rgba(6, 78, 59, 0.638);
+          border-bottom-color: #94A3B8;
+          border-top-color: #94A3B8;
+        }
+
+
+        .border_color_top {
+          border-top-color: rgba(6, 78, 59, 0.638);
+        } 
+
+        .border_color_top_img {
+          width: 98%;
+          border-top: 1px solid rgba(6, 78, 59, 0.638);
+        }
+
+        .box_border{
+          width: 50%;
+          height: 85%;
+          position: absolute;
+          border-top: 4px solid rgba(6, 78, 59, 0.638);
+          border-right: 4px solid rgba(6, 78, 59, 0.638);
+          z-index: 9999999;
+          pointer-events: none;
+        }
+
+        .home_left_section {
+          width: 20% !important;
+          height: 65% !important;
+          pointer-events: none;
+        }
+
+        .box_border_skills{
+          width: 107%;
+          height: 65%;
+          position: absolute;
+          border-top: 4px solid rgba(6, 78, 59, 0.638);
+          border-right: 4px solid rgba(6, 78, 59, 0.638);
+          z-index: 9999999;
+          pointer-events: none;
+
+        }
+
+        .box_border_skills_front {
+          width: 13.5%;
+          height: 74.5%;
+          position: absolute;
+          border-top: 4px solid rgba(6, 78, 59, 0.638);
+          border-right: 4px solid rgba(6, 78, 59, 0.638);
+          z-index: 9999999;
+          pointer-events: none;
+        }
+        .box_border_skills_back {
+          width: 107%;
+          height: 39%;
+          position: absolute;
+          border-top: 4px solid rgba(6, 78, 59, 0.638);
+          border-right: 4px solid rgba(6, 78, 59, 0.638);
+          z-index: 9999999;
+          pointer-events: none;
+        }
+
+        .box_border_main{
+          width: 30%;
+          height: 83.8%;
+          position: absolute;
+          border-top: 4px solid rgba(6, 78, 59, 0.638);
+          border-left: 4px solid rgb(6, 78, 59);
+          z-index: 9999999;
+          pointer-events: none;
+        }
+.cursor_color_styles {
+  z-index: 9999999;
+          pointer-events: none;
+}
+        .cursor_color{
+          background-color: rgba(6, 78, 59, 0.382);
+        }
+        .cursor_color_middle {
+          background-color: rgba(6, 78, 59, 0.682);
+        }
+
+        .cursor_color_end{
+          background-color: rgba(6, 78, 59, 0.819);
+        }
+
+.border_about_me {
+  border-left: 4px solid rgba(6, 78, 59, 0.638);
+  border-top: 4px solid rgba(6, 78, 59, 0.638);
+  z-index: 9999999;
+}
+.border_about_me_line{
+  border-top: 4px solid rgba(6, 78, 59, 0.638);
+  z-index: 9999999;
+}
+
