@@ -1,20 +1,20 @@
-import React, { useRef, useEffect } from 'react';
-import gsap from 'gsap';
+// import React, { useRef, useEffect } from 'react';
+// import gsap from 'gsap';
 import profileImg from '../../assets/profileImgCic.png';
 import landingData from './landingData';
 
 function LandingPage() {
-  const boxRef = useRef();
-  useEffect(() => {
-    // This is called tween (between states)
-    gsap.to([boxRef.current], {
-      y: 23,
-      duration: 3.1,
-      repeat: -1,
-      ease: 'bounce.out',
-      yoyoEase: true,
-    }); // gsap.to([boxRef.current], 2, {y: 400, repeat: 10, yoyoEase: true})
-  }, []);
+  // const boxRef = useRef();
+  // useEffect(() => {
+  //   // This is called tween (between states)
+  //   gsap.to([boxRef.current], {
+  //     y: 23,
+  //     duration: 3.1,
+  //     repeat: -1,
+  //     ease: 'bounce.out',
+  //     yoyoEase: true,
+  //   }); // gsap.to([boxRef.current], 2, {y: 400, repeat: 10, yoyoEase: true})
+  // }, []);
   return (
     <>
       <section id="/" className="pt-[60px] flex text-slate-400 back_round_color_home hover:bg-blend-darken">
@@ -35,7 +35,7 @@ function LandingPage() {
           <div className=" h-[38px] w-[38px] bg-zinc-950 absolute bottom-0 left-[50%] origin-center rotate-45 z-10" />
           <div className=" h-[438px] w-[38px] border-slate-950 border-2 rounded-md absolute bottom-0 left-[50%] origin-center rotate-45 z-0" />
           <div className="tilt-div h-[438px] w-[38px] border-slate-950 border-2 rounded-md absolute bottom-0 left-[50%] z-0" />
-          <div ref={boxRef} className="z-20 h-[228px] w-[238px] relative img_effect">
+          <div className="z-20 h-[228px] w-[238px] relative img_effect">
             <img src={profileImg} alt="image_portfolio" className="z-20 ml-[25%] h-[228px] w-[228px] profile_img " />
             {/* <div className="img_1 z-20 " />
             <div className="img_2 z-20" />
