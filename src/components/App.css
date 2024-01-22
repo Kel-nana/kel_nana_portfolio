@@ -5,8 +5,24 @@
   backdrop-filter: blur(100px);
 }
 
+.mobileNav{
+  background-color: #1b1917f9;
+  backdrop-filter: blur(10px) !important;
+  z-index: 99999999;
+}
+.mobileLinks {
+  background-color: #34312d;
+}
 .link_color {
   color: rgb(6, 78, 59);
+}
+
+.btnNav {
+  background-color: #14110F;
+}
+
+.btnNav:hover {
+  background-color: #C0C0C0;
 }
 
 .back_round_color_home {
@@ -22,6 +38,7 @@
 top: 38%;
 left: 25%;
 }
+
 
 /* .img_effect {
   border-radius: 100% ;
