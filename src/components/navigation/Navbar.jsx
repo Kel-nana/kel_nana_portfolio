@@ -2,17 +2,19 @@ import React, {
   useEffect, useState, useRef, useLayoutEffect,
 } from 'react';
 import { gsap } from 'gsap';
+import { motion } from 'framer-motion';
 import { Link as NavLinks, animateScroll as scroll } from 'react-scroll';
 import { AiOutlineClose } from 'react-icons/ai';
+import { HiMenuAlt4 } from 'react-icons/hi';
 import { onEnter, onLeave, links } from './NavUtil';
+
 // import { BiMenuAltRight } from "react-icons/bi";
-// import { HiMenuAlt4 } from 'react-icons/hi';
 
 function Navbar() {
   const [scrollNav, setScrollNav] = useState(false);
   const linkRef = useRef();
   const [windowSize, setWindowSize] = useState([window.innerWidth]);
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   // Desktop screen navbar breaking point
   useEffect(() => {
     const handleWindowResize = () => {
@@ -27,7 +29,7 @@ function Navbar() {
   }, []);
 
   // console.log(windowSize);
-  // 1242
+  // breaking points 1242 592 navbar drop 724 page structure
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.to('li.nav_links', {
@@ -61,9 +63,13 @@ function Navbar() {
     scroll.scrollToTop();
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className={`navbar  z-50 shadow-md border-y-stone-900 border-y-4 fixed flex h-[14vh] top-0 left-0 mx-auto w-[100%] px-2 sm:px-6 lg:px-8 ${scrollNav ? 'scrollNav' : ''}`}>
-      <NavLinks className="justify-center mr-[51%] mt-[18px] h-[50px] rounded-lg border-slate-200 border-2 rounded-md flex items-center pl-[1.6rem] pr-[1.6rem]" type="button" to="/" onClick={toggleHome}>Kel_nana</NavLinks>
+    <nav className={`navbar justify-between z-50 shadow-md border-y-stone-900 border-y-4 fixed flex h-[14vh] top-0 left-0 mx-auto w-[100%] px-2 sm:px-6 lg:px-8 ${scrollNav ? 'scrollNav' : ''}`}>
+      <NavLinks className="justify-center mt-[18px] h-[50px] rounded-lg border-slate-200 border-2 rounded-md flex items-center pl-[1.6rem] pr-[1.6rem]" type="button" to="/" onClick={toggleHome}>Kel_nana</NavLinks>
       <section className={` ${windowSize < 1242 ? 'hidden' : ''}`}>
         <ul className=" flex items-center space-x-6 rounded-lg border-slate-200 border-2 rounded-md h-[50px] mt-[18px] w-[35vw] justify-center" ref={linkRef}>
           {links.map((link) => (
@@ -81,23 +87,55 @@ function Navbar() {
           ))}
         </ul>
       </section>
-      <section className={` ${windowSize > 1242 ? 'hidden' : ''}`}>
-        <ul className=" grid grid-row-4 rounded-lg border-slate-200 border-2 rounded-md h-[90vh] w-[35vw] align-center justify-center" ref={linkRef}>
-          <div><AiOutlineClose className="absolute text-3xl" /></div>
+      <section className={`${windowSize > 1242 ? 'hidden' : 'h-[95vh] w-[75vw] ml-[13.5vw]'} `}>
+        <div>
+          <HiMenuAlt4
+            onClick={toggleMenu}
+            className={`absolute ml-[64vw] mt-[4vh] text-3xl${
+              isMenuOpen ? 'w-[0] h-[]0' : ''
+            }`}
+          />
+
+        </div>
+        <motion.ul
+          initial={{ y: -543, opacity: 0 }}
+          whileInView={{ y: [-543, 0], opacity: 1 }}
+          transition={{
+            ease: 'linear',
+            duration: 1.2,
+            delay: 0.1,
+          }}
+          className={`grid grid-row-4 mobileNav pt-[7vh] rounded-lg border-x-stone-900 border-x-4 h-[94vh] w-[70vw] justify-center transition-transform ease-in-out duration-500 ${
+            isMenuOpen ? '' : 'hidden'
+          }  `}
+        >
+          <div><AiOutlineClose onClick={toggleMenu} className="absolute ml-[37.27vw] mt-[-2vh] text-3xl" /></div>
           {links.map((link) => (
-            <li className={` border-slate-200 border-2 rounded-md h-[6vh] w-[10vw]  ${link.class}`} onMouseEnter={onEnter} onMouseLeave={onLeave} key={link.text}>
+            <motion.li
+              initial={{ x: 243, opacity: 0 }}
+              whileInView={{ x: [243, 0], opacity: 1 }}
+              transition={{
+                duration: 1.4,
+                delay: 0.26,
+              }}
+              className={`btnNav hover:scale-125 border-slate-200 border-2 rounded-md h-[6vh] w-[200px] text-center ${link.class}`}
+              // onMouseEnter={onEnter}
+              // onMouseLeave={onLeave}
+              key={link.text}
+            >
               <NavLinks
                 to={link.path}
                 smooth
                 duration={500}
                 spy
                 exact="true"
+                onClick={toggleMenu}
               >
                 {link.text}
               </NavLinks>
-            </li>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </section>
     </nav>
   );
