@@ -18,6 +18,8 @@ import cssImg from '../../assets/css.png';
 const aboutMe = {
   name: 'ABOUT ME',
   description: "Hi, I'm Kelvin, a full-stack developer enrolled in Microverse. I love collaborating with coding partners around the GLOBE using project-based learning and pair programming. I specialize in HTML5, CSS3, JavaScript, and React, with plans to add React Native, Ruby, and Ruby on Rails. With excellent communication and time management skills, I'm passionate about improving user interfaces and building consumer-friendly products. Let's discuss my ideas for enhancing your operating system's user interface on a 20-min Zoom call next week",
+  tech: '[ TECH_STACK ]',
+  view: '[ VIEW_MORE ]',
 };
 
 const backEnd = [
@@ -132,6 +134,23 @@ const toolsAndMethodsDisplay = toolsAndMethods.map((item) => (
   </div>
 ));
 
+const iconBtn = frontEnd.map((item) => {
+  if (['HTML', 'CSS', 'JavaScript'].includes(item.name)) {
+    return (
+      <div key={item.name} className="grid grid-cols-3 gap-2 w-[14vw] mb-[5px] ml-[10%]  ">
+        <img
+          key={item.name}
+          src={item.Image}
+          alt="image_portfolio"
+          className="z-20 relative ml-[0.6%] h-[5vh] w-[5vw] rounded-full border-2 border_color_icon  p-[3.5px]"
+        />
+        <p className="responsive_text_titles">{item.name}</p>
+      </div>
+    );
+  }
+  return null; // If the item name is 'React', stop displaying further items
+});
+
 export {
-  aboutMe, backEndDisplay, frontEndDisplay, toolsAndMethodsDisplay,
+  aboutMe, backEndDisplay, frontEndDisplay, toolsAndMethodsDisplay, iconBtn,
 };
