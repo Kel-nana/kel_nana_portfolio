@@ -1,0 +1,41 @@
+.application {
+    border: 4px solid #064e3b ;
+    width: 75%;
+    margin-top: -100vh;
+    border-top-right-radius: 30px;
+}
+
+.anime {
+    margin-top: 0;
+    transition: all 2s ease-in-out 0.3s;
+}
+
+.pop_up_container {
+    border: 2px solid #064e3b;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+  }
+  
+  .back_drop {
+    width: 100vw;
+    height: 100vh;
+    background-color: #34312d0a !important;
+    backdrop-filter: blur(100px) !important;
+    /* background-color: #064e3b; */
+  }
+
+  .pop_up_letter {
+    position: fixed !important;
+    width: 23vw;
+    height: 23vh;
+    border-top: 1px solid #8c5703;
+    border-top-left-radius:95%;
+    margin-right: 0;
+    margin-top: -12%;
+  }
+
+  .letter_folder {
+    transform:rotate(60deg);
+  }

@@ -61,3 +61,17 @@
     border-left: 4px solid rgba(6, 78, 59, 0.638);
     width: 35%;
   }
+
+  .btn_projects {
+    border: 4px solid rgba(6, 78, 59, 0.638);
+    border-radius: 6px;
+    padding: 5px 1vw;
+    color: rgba(6, 78, 59, 0.638);
+    font-weight: 700 ;
+    font-size: 1.6vw !important;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .btn_projects:hover {
+    transform: scale(1.1);
+  }
