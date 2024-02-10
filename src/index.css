@@ -14,6 +14,7 @@ body {
   cursor: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 p::selection,
@@ -41,6 +42,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #14110F; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid rgb(6, 78, 59); /* creates padding around scroll thumb */
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
 
 code {

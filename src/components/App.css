@@ -1,6 +1,6 @@
 .navbar {
   background-color: #34312d58;
-  color: rgb(6, 78, 59) !important;
+  color: #064e3b !important;
   font-weight: 700;
   backdrop-filter: blur(100px);
 }
@@ -18,11 +18,22 @@
 }
 
 .btnNav {
-  background-color: #14110F;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #14110f;
 }
 
 .btnNav:hover {
   background-color: #C0C0C0;
+}
+
+.nav_ul {
+ right: -5vw;
+}
+
+.btn_link_mobile {
+  padding:15px 55px;
 }
 
 .back_round_color_home {
@@ -33,19 +44,44 @@
   position: relative;
 }
 
+.landing_text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  min-width: 20px;
+}
+
 .profile_img {
-  position: absolute;
-top: 38%;
-left: 25%;
+  /* position: absolute; */
+  background-image: url("../assets/imgBg.jpg");
+  border-right: 5px solid #064e3b;
+  border-radius: 8px ;
+  top: 10%;
+  transition: all 0.8s ease-in-out 0.2s;
+}
+
+.profile_img:hover {
+  margin-left: 25%;
 }
 
 
-/* .img_effect {
-  border-radius: 100% ;
-  background-color: black;
-} */
+.btn_pop_up {
+  padding: 25px, 10px !important;
+  background-color: #14110f;
+  border: 5px solid rgb(28 25 23);
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px 3px rgba(229,239,233,0.52) inset;
+  z-index: 999 !important;
+}
 
+.img_effect {
+  border-radius: 8px ;
+  background-color: #064e3b;
+  transition: all 0.8s ease-in-out 0.2s;
+}
 
+.img_effect:hover {
+  transform: scale(1.05,1.05);
+}
 
 
         .tilt-div {
@@ -71,6 +107,9 @@ left: 25%;
           border-top: 1px solid rgba(6, 78, 59, 0.638);
         }
 
+        .border_color_about_btn {
+          border-top: 1px solid rgba(6, 78, 59, 0.638);
+        }
         .box_border{
           width: 50%;
           height: 85%;
@@ -151,3 +190,33 @@ left: 25%;
   z-index: 9999999;
 }
 
+.loading_bg {
+  background-image: url(../assets/loadingbgtwo.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+
+@media only screen and (max-width: 1241px) {
+  .loading_bg {
+    background-image: url(../assets/tabBg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+  }
+}
+
+@media only screen and (max-width: 717px) {
+  .loading_bg {
+    background-image: url(../assets/tabSmBg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  .loading_bg {
+    background-image: url(../assets/mobilebg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+  }
+}
