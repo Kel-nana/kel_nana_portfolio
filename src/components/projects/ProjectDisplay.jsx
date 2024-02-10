@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import './project.css';
 
 function Project() {
-  const [toggleStack, setToggleStack] = useState(true)
+  const [toggleStack, setToggleStack] = useState(true);
   const settings = {
     dots: true,
     infinite: true,
@@ -15,14 +15,14 @@ function Project() {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-    const handleClick = (projectId) => {
-      if(projectId === 'Front_End') {
-        setToggleStack(false);
-      }else {
-        setToggleStack(true);
-      }
 
-    };
+  const handleClick = (projectId) => {
+    if (projectId === 'Front_End') {
+      setToggleStack(false);
+    } else {
+      setToggleStack(true);
+    }
+  };
 
   return (
     <section id="project" className="pt-[90px] h-[100vh] back_round_color_home">
@@ -36,16 +36,21 @@ function Project() {
               duration: 3,
               delay: 0.3,
             }}
-            className="absolute mt-[0.5%] ml-[1%] pr-[4%] text-2x
-            l font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[3.8rem]"
+            className="absolute mt-[0.5%] ml-[1%] pr-[4%] text-2x l font-black border_about_me rounded-tr-3xl pt-[0.7rem] pl-[3.8rem]"
             whileHover={{ scale: 0.9, opacity: 0.2 }}
           >
-            {toggleStack? 'FRONTEND' : 'BACKEND'}
+            {toggleStack ? 'FRONTEND' : 'BACKEND'}
           </motion.h2>
           <div className="border_styles_right left_section rounded-tr-3xl ml-[21.2%] mt-[2%]" />
           <div className="border_styles right_section rounded-tr-3xl ml-[40.6%] mt-[1%]" />
           <div className="border_styles_image bottom_section rounded-3xl ml-[38.59%] mt-[-1%]" />
-          <Slider {...settings}>
+          <Slider
+            dots={settings.dots}
+            infinite={settings.infinite}
+            speed={settings.speed}
+            slidesToShow={settings.slidesToShow}
+            slidesToScroll={settings.slidesToScroll}
+          >
             {projects(handleClick, toggleStack)}
           </Slider>
         </div>

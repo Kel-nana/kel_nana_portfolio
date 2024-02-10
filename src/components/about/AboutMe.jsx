@@ -46,7 +46,7 @@ function AboutMe(props) {
     setFrontEndBtn('');
     return undefined;
   }, [hideAbout]);
-  
+
   const scrollValue = breakPoint < 516 ? 950 : 650;
 
   const openBtn = () => {

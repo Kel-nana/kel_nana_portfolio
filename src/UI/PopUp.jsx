@@ -8,7 +8,7 @@ import './popUp.css';
 function PopUp(props) {
   const [dropAnimation, setDropAnimation] = useState();
   const { trigger, closeTrigger } = props;
-  console.log(trigger, 'trigger');
+
   const closeBtn = () => {
     closeTrigger(false);
   };
