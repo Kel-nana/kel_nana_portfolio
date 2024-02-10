@@ -1,17 +1,25 @@
+import PropTypes from 'prop-types';
 import AboutMe from '../about/AboutMe';
-import ProjectDisplay from '../work/ProjectDisplay';
+import ProjectDisplay from '../projects/ProjectDisplay';
 import Contacts from '../contacts/Contacts';
 import LandingPage from '../landingPage/LandingPage';
 
-function Outlet() {
+function Outlet(props) {
+  const { breakPoint } = props;
   return (
     <>
-      <LandingPage />
-      <AboutMe />
+      <LandingPage breakPoint={breakPoint} />
+      <AboutMe breakPoint={breakPoint} />
       <ProjectDisplay />
-      <Contacts />
+      <Contacts breakPoint={breakPoint} />
     </>
   );
 }
 
+Outlet.propTypes = {
+  breakPoint: PropTypes.number.isRequired,
+};
+
 export default Outlet;
+
+// its okay to rest kel nana
