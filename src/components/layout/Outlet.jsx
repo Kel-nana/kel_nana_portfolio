@@ -10,7 +10,7 @@ function Outlet(props) {
     <>
       <LandingPage breakPoint={breakPoint} />
       <AboutMe breakPoint={breakPoint} />
-      <ProjectDisplay breakPoint={breakPoint} />
+      <ProjectDisplay />
       <Contacts breakPoint={breakPoint} />
     </>
   );

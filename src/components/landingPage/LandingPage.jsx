@@ -11,7 +11,7 @@ import './landing.css';
 function LandingPage(props) {
   const [trigger, setTrigger] = useState(false);
   const { breakPoint } = props;
-  console.log(breakPoint, 'landing page');
+
   const popUpTrigger = () => {
     animateScrollTo(0, {
       speed: 500, // Set the scrolling speed (adjust as needed)

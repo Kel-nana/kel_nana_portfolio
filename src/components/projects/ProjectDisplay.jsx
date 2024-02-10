@@ -1,6 +1,4 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import Slider from 'react-slick';
 import projects from './project';
@@ -8,7 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './project.css';
 
-function Project(props) {
+function Project() {
   const [toggleStack, setToggleStack] = useState(true)
   const settings = {
     dots: true,
@@ -23,12 +21,9 @@ function Project(props) {
       }else {
         setToggleStack(true);
       }
-      console.log(`Project with ID ${projectId} clicked`);
-      // Your logic here
+
     };
-    console.log(toggleStack, 'state management toggleStack clicked');
-  const { breakPoint } = props;
-  console.log(breakPoint, 'breakpoint work');
+
   return (
     <section id="project" className="pt-[90px] h-[100vh] back_round_color_home">
       <div className="grid grid-cols-3 gap-2 mt-[3vh] w-[90vw] h-[39vh] ">
@@ -58,9 +53,5 @@ function Project(props) {
     </section>
   );
 }
-
-Project.propTypes = {
-  breakPoint: PropTypes.number.isRequired,
-};
 
 export default Project;

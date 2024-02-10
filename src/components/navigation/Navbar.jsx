@@ -70,7 +70,6 @@ function Navbar(props) {
       setNavBar('ml-[45vw]');
     }
   }, [breakPoint]);
-  console.log(navBar, 'navbar MISSING');
   // {` ${breakPoint < 644 ? 'ml-[55vw]' : 'ml-[65vw]'}`}
   return (
     <nav className={`navbar justify-between z-50 shadow-md border-y-stone-900 border-y-4 fixed flex h-[14vh] top-0 left-0 mx-auto w-[100vw] px-2 sm:px-6 lg:px-8 ${scrollNav ? 'scrollNav' : ''}`}>

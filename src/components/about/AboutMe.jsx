@@ -15,7 +15,6 @@ function AboutMe(props) {
   const [FrontEndtools, setFrontEndTools] = useState('about_anime_tools_hide');
   const [FrontEndBtn, setFrontEndBtn] = useState('about_anime_btn_hide');
   const { breakPoint } = props;
-  console.log(breakPoint, 'aboutMe breakpoint');
 
   useEffect(() => {
     const { body } = document;
@@ -47,8 +46,9 @@ function AboutMe(props) {
     setFrontEndBtn('');
     return undefined;
   }, [hideAbout]);
+  
   const scrollValue = breakPoint < 516 ? 950 : 650;
-  console.log(scrollValue, 'scrollValue');
+
   const openBtn = () => {
     animateScrollTo(scrollValue, {
       speed: 500, // Set the scrolling speed (adjust as needed)

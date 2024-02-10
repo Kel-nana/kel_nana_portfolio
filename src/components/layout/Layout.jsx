@@ -6,7 +6,7 @@ import SocialMedia from '../socialMediaLinks/SocialMediaLinks';
 
 function Layout(props) {
   const { breakPoint } = props;
-  console.log(breakPoint, 'breakpoint');
+
   return (
     <>
       <Navbar breakPoint={breakPoint} />
