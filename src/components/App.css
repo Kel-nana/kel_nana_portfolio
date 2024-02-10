@@ -5,39 +5,41 @@
   backdrop-filter: blur(100px);
 }
 
-.mobileNav{
+.mobileNav {
   background-color: #1b1917f9;
   backdrop-filter: blur(10px) !important;
   z-index: 99999999;
 }
+
 .mobileLinks {
   background-color: #34312d;
 }
+
 .link_color {
   color: rgb(6, 78, 59);
 }
 
 .btnNav {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #14110f;
 }
 
 .btnNav:hover {
-  background-color: #C0C0C0;
+  background-color: #c0c0c0;
 }
 
 .nav_ul {
- right: -5vw;
+  right: -5vw;
 }
 
 .btn_link_mobile {
-  padding:15px 55px;
+  padding: 15px 55px;
 }
 
 .back_round_color_home {
-  background-color: #14110F !important;
+  background-color: #14110f !important;
 }
 
 .image-container {
@@ -54,138 +56,138 @@
   /* position: absolute; */
   background-image: url("../assets/imgBg.jpg");
   border-right: 5px solid #064e3b;
-  border-radius: 8px ;
+  border-radius: 8px;
   top: 10%;
   transition: all 0.8s ease-in-out 0.2s;
 }
 
 .profile_img:hover {
-  margin-left: 25%;
+  margin-left: 5vw;
 }
 
-
 .btn_pop_up {
-  padding: 25px, 10px !important;
+  padding: 0 10px !important;
   background-color: #14110f;
   border: 5px solid rgb(28 25 23);
   border-radius: 12px;
-  box-shadow: 0px 0px 4px 3px rgba(229,239,233,0.52) inset;
+  box-shadow: 0 0 4px 3px rgba(229, 239, 233, 0.52) inset;
   z-index: 999 !important;
 }
 
 .img_effect {
-  border-radius: 8px ;
+  border-radius: 8px;
   background-color: #064e3b;
   transition: all 0.8s ease-in-out 0.2s;
 }
 
 .img_effect:hover {
-  transform: scale(1.05,1.05);
+  transform: scale(1.05, 1.05);
 }
 
+.tilt-div {
+  transform: rotate(135deg);
+}
 
-        .tilt-div {
-          transform: rotate(135deg);
-        }
+.border_color_icon {
+  border-right-color: rgba(6, 78, 59, 0.638);
+  border-left-color: rgba(6, 78, 59, 0.638);
+  border-bottom-color: #94a3b8;
+  border-top-color: #94a3b8;
+}
 
+.border_color_top {
+  border-top-color: rgba(6, 78, 59, 0.638);
+}
 
+.border_color_top_img {
+  width: 98%;
+  border-top: 1px solid rgba(6, 78, 59, 0.638);
+}
 
-        .border_color_icon {
-          border-right-color: rgba(6, 78, 59, 0.638);
-          border-left-color: rgba(6, 78, 59, 0.638);
-          border-bottom-color: #94A3B8;
-          border-top-color: #94A3B8;
-        }
+.border_color_about_btn {
+  border-top: 1px solid rgba(6, 78, 59, 0.638);
+}
 
+.box_border {
+  width: 50%;
+  height: 85%;
+  position: absolute;
+  border-top: 4px solid rgba(6, 78, 59, 0.638);
+  border-right: 4px solid rgba(6, 78, 59, 0.638);
+  z-index: 9999999;
+  pointer-events: none;
+}
 
-        .border_color_top {
-          border-top-color: rgba(6, 78, 59, 0.638);
-        } 
+.home_left_section {
+  width: 20% !important;
+  height: 65% !important;
+  pointer-events: none;
+}
 
-        .border_color_top_img {
-          width: 98%;
-          border-top: 1px solid rgba(6, 78, 59, 0.638);
-        }
+.box_border_skills {
+  width: 107%;
+  height: 65%;
+  position: absolute;
+  border-top: 4px solid rgba(6, 78, 59, 0.638);
+  border-right: 4px solid rgba(6, 78, 59, 0.638);
+  z-index: 9999999;
+  pointer-events: none;
+}
 
-        .border_color_about_btn {
-          border-top: 1px solid rgba(6, 78, 59, 0.638);
-        }
-        .box_border{
-          width: 50%;
-          height: 85%;
-          position: absolute;
-          border-top: 4px solid rgba(6, 78, 59, 0.638);
-          border-right: 4px solid rgba(6, 78, 59, 0.638);
-          z-index: 9999999;
-          pointer-events: none;
-        }
+.box_border_skills_front {
+  width: 13.5%;
+  height: 74.5%;
+  position: absolute;
+  border-top: 4px solid rgba(6, 78, 59, 0.638);
+  border-right: 4px solid rgba(6, 78, 59, 0.638);
+  z-index: 9999999;
+  pointer-events: none;
+}
 
-        .home_left_section {
-          width: 20% !important;
-          height: 65% !important;
-          pointer-events: none;
-        }
+.box_border_skills_back {
+  width: 107%;
+  height: 39%;
+  position: absolute;
+  border-top: 4px solid rgba(6, 78, 59, 0.638);
+  border-right: 4px solid rgba(6, 78, 59, 0.638);
+  z-index: 9999999;
+  pointer-events: none;
+}
 
-        .box_border_skills{
-          width: 107%;
-          height: 65%;
-          position: absolute;
-          border-top: 4px solid rgba(6, 78, 59, 0.638);
-          border-right: 4px solid rgba(6, 78, 59, 0.638);
-          z-index: 9999999;
-          pointer-events: none;
+.box_border_main {
+  width: 30%;
+  height: 83.8%;
+  position: absolute;
+  border-top: 4px solid rgba(6, 78, 59, 0.638);
+  border-left: 4px solid rgb(6, 78, 59);
+  z-index: 9999999;
+  pointer-events: none;
+}
 
-        }
-
-        .box_border_skills_front {
-          width: 13.5%;
-          height: 74.5%;
-          position: absolute;
-          border-top: 4px solid rgba(6, 78, 59, 0.638);
-          border-right: 4px solid rgba(6, 78, 59, 0.638);
-          z-index: 9999999;
-          pointer-events: none;
-        }
-        .box_border_skills_back {
-          width: 107%;
-          height: 39%;
-          position: absolute;
-          border-top: 4px solid rgba(6, 78, 59, 0.638);
-          border-right: 4px solid rgba(6, 78, 59, 0.638);
-          z-index: 9999999;
-          pointer-events: none;
-        }
-
-        .box_border_main{
-          width: 30%;
-          height: 83.8%;
-          position: absolute;
-          border-top: 4px solid rgba(6, 78, 59, 0.638);
-          border-left: 4px solid rgb(6, 78, 59);
-          z-index: 9999999;
-          pointer-events: none;
-        }
 .cursor_color_styles {
   z-index: 9999999;
-          pointer-events: none;
+  pointer-events: none;
 }
-        .cursor_color{
-          background-color: rgba(6, 78, 59, 0.382);
-        }
-        .cursor_color_middle {
-          background-color: rgba(6, 78, 59, 0.682);
-        }
 
-        .cursor_color_end{
-          background-color: rgba(6, 78, 59, 0.819);
-        }
+.cursor_color {
+  background-color: rgba(6, 78, 59, 0.382);
+}
+
+.cursor_color_middle {
+  background-color: rgba(6, 78, 59, 0.682);
+}
+
+.cursor_color_end {
+  background-color: rgba(6, 78, 59, 0.819);
+}
 
 .border_about_me {
   border-left: 4px solid rgba(6, 78, 59, 0.638);
   border-top: 4px solid rgba(6, 78, 59, 0.638);
   z-index: 9999999;
 }
-.border_about_me_line{
+
+.border_about_me_line {
   border-top: 4px solid rgba(6, 78, 59, 0.638);
   z-index: 9999999;
 }
@@ -195,7 +197,6 @@
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
 }
-
 
 @media only screen and (max-width: 1241px) {
   .loading_bg {

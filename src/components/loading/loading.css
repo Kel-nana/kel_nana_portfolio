@@ -3,107 +3,77 @@
   --stroke-dasharray-two: 15;
 }
 
-/* :rootRight {
-  --stroke-dasharray: 100;
-} */
-
 .loading_circle {
-    position: relative;
-    display: inline-block;
-    border: 10px solid #064e3bfc;
-    background-color: #064e3b71;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  border: 10px solid #064e3bfc;
+  background-color: #064e3b71;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .loading_back_round_color_home {
   background-color: rgba(255, 255, 255, 0) !important;
 }
 
-.position_first {
-    top: 30%;
-    left: 50%;
-    animation: triangle1 5s linear 0.2s infinite alternate;
-}
-  
-.position_second {
-    top: 50%;
-    left: 42%;
-    animation: triangle2 5s linear 0.2s infinite alternate;
-}
-
-.position_third {
-    top: 50%;
-    left: 49.7%;
-}
-
 .loading_animation {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
-    border: 4px solid rgba(6, 78, 59, 0.97);
-    background-color: rgba(6, 78, 59, 0.442);
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 4px solid rgba(6, 78, 59, 0.97);
+  background-color: rgba(6, 78, 59, 0.442);
+}
+
+.loading_animation_container .loading_animation:nth-last-child(1) {
+  animation: loadingC 0.6s 0.1s linear infinite;
+}
+
+.loading_animation_container .loading_animation:nth-last-child(2) {
+  animation: loadingC 0.6s 0.2s linear infinite;
+}
+
+.loading_animation_container .loading_animation:nth-last-child(3) {
+  animation: loadingC 0.6s 0.3s linear infinite;
+}
+
+.loading_animation_container {
+  border-top: 12px solid rgba(6, 78, 59, 0.694);
+  padding: 12.5vh 25vw;
+}
+
+@keyframes loadingC {
+  0% {
+    transform: translate(0, 0);
   }
 
-@keyframes triangle1 {
-    0%   {left:50%; top:0;}
-    25%  {left:85%; top: 0;}
-    50%  {left:85%; top: 25%;}
-    75%  {left:15.5; top:25%;}
-    100% {left:15.5; top:25%;}
-   } 
-   @keyframes triangle2 {
-    0%   {left:50%; top:50%;}
-    25%  {left:50%; top:50%;}
-    50%  {left:-15.5%; top: 50%;}
-    75%  {left:-15.5%; top: 25%;}
-    100% {left:50%; top:25%;}
-   } 
-
-   .loading_animation_container .loading_animation:nth-last-child(1) {
-    animation: loadingC 0.6s 0.1s linear infinite;
-  }
-  .loading_animation_container .loading_animation:nth-last-child(2) {
-    animation: loadingC 0.6s 0.2s linear infinite;
-  }
-  .loading_animation_container .loading_animation:nth-last-child(3) {
-    animation: loadingC 0.6s 0.3s linear infinite;
+  50% {
+    transform: translate(0, 25px);
   }
 
-  .loading_animation_container {
-    border-top: 12px solid rgba(6, 78, 59, 0.694);
-    padding: 12.5vh 25vw;
+  100% {
+    transform: translate(0, 0);
   }
-  @keyframes loadingC {
-    0% {
-      transform: translate(0, 0);
-    }
-    50% {
-      transform: translate(0, 25px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
+}
 
-  .loading_circle_container{
-    border-bottom: 12px solid rgba(6, 78, 59, 0.694);
-  }
+.loading_circle_container {
+  border-bottom: 12px solid rgba(6, 78, 59, 0.694);
+}
 
-  .top_div {
-     border-bottom: 1px solid rgba(6, 78, 59, 0.694);
-     border-right: 1px solid rgba(6, 78, 59, 0.694);
-  }
-  .bottom_div {
-    border-top: 1px solid rgba(6, 78, 59, 0.694);
-    border-left: 1px solid rgba(6, 78, 59, 0.694);
- }
+.top_div {
+  border-bottom: 1px solid rgba(6, 78, 59, 0.694);
+  border-right: 1px solid rgba(6, 78, 59, 0.694);
+}
 
- .path {
+.bottom_div {
+  border-top: 1px solid rgba(6, 78, 59, 0.694);
+  border-left: 1px solid rgba(6, 78, 59, 0.694);
+}
+
+.path {
   stroke-dasharray: var(--stroke-dasharray);
-  stroke: #ffffff;
+  stroke: #fff;
   stroke-width: 0.9vw;
   animation: dash 5s linear infinite;
   animation-delay: -1s;
@@ -117,7 +87,7 @@
 
 .path_right {
   stroke-dasharray: var(--stroke-dasharray-two);
-  stroke: #ffffff;
+  stroke: #fff;
   stroke-width: 0.1vw;
   animation: dash-one 5s linear infinite;
   animation-delay: -1s;
@@ -130,7 +100,7 @@
 }
 
 .loading_top_right {
-    display: grid;
+  display: grid;
   place-items: center;
   margin: 0 0 0 0;
   height: 50vh;
